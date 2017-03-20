@@ -6,12 +6,12 @@ require 'jsonb_store/version'
 Gem::Specification.new do |spec|
   spec.name          = "jsonb_store"
   spec.version       = JsonbStore::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
+  spec.authors       = ["David Hooper"]
+  spec.email         = ["davidhooper94@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{A jsonb_store for rails that lets you set default values using a DSL.}
+  spec.description   = %q{A jsonb_store for rails that lets you set default values using a DSL.}
+  spec.homepage      = "https://github.com/DavidHooper/jsonb_store"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
