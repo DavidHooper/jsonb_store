@@ -1,4 +1,5 @@
 require "jsonb_store/version"
+require "jsonb_store/macro"
 require "active_record"
 module JsonbStore
   extend ActiveSupport::Concern
