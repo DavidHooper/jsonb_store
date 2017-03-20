@@ -7,5 +7,5 @@ module JsonbStore
 end
 
 ActiveSupport.on_load(:active_record) do
-  ActiveRecord::Base.send(:include, JsonbAccessor)
+  ActiveRecord::Base.send(:include, JsonbStore)
 end 
