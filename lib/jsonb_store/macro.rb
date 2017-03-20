@@ -7,7 +7,7 @@ module JsonbStore
       def jsonb_store(name, &block)
         tree = Field.new(name)
         tree.instance_exec(&block)
-        attribute name, :jsonb, default: tree.to_hash
+        attribute name, :jsonb, default: tree.to_hash[name]
       end
 
       class Field
