@@ -8,6 +8,7 @@ module JsonbStore
         tree = Field.new(name)
         tree.instance_exec(&block)
         attribute name, :jsonb, default: tree.to_hash[name]
+        attribute "#{name}_schema", :jsonb, default: tree.to_hash[name]
       end
 
       class Field
